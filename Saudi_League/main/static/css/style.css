@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Tahoma', Arial;
+}
+
+/* Navbar */
+nav {
+    background-color: #0b6623;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: #0b6623;
+}
+
+p {
+    line-height: 1.8;
+}

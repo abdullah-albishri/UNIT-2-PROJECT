@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saudi League</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">الرئيسية</a>
+        <a href="/history/">تاريخ الدوري</a>
+        <a href="/clubs/">الأندية</a>
+        <a href="/players/">اللاعبين</a>
+        <a href="/stats/">الإحصائيات</a>
+        <a href="/global/">التأثير العالمي</a>
+    </nav>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
