@@ -2,118 +2,148 @@
 {% load static %}
 
 {% block title %}الرئيسية{% endblock %}
+{% block active_home %}active{% endblock %}
 
 {% block hero %}
-<div class="hero-image-bg">
-    <div class="hero-text-content">
-        <h1>الرياضة في السعودية.. طموح لا حدود له</h1>
-        <p>مرحباً بكم في منصتنا التي تستعرض أهم الإنجازات والرياضات في مملكتنا الغالية وفق رؤية 2030.</p>
-        <div class="action-btns">
-            <a href="#about-us" class="btn-1">اكتشف المزيد</a>
-            <a href="#stats-section" class="btn-2">إحصائياتنا</a>
+<div class="hero-content saudi-home-hero">
+    <div class="hero-text">
+        <span class="eyebrow">الكرة السعودية - نظرة عامة</span>
+        <h1>إرث كروي يتجدد بطموح عالمي</h1>
+        <p>تُعد كرة القدم في المملكة العربية السعودية من أكثر الرياضات شعبية وانتشارًا، وتحظى باهتمام كبير من الجماهير والدولة على حد سواء. ويُعتبر الاتحاد السعودي لكرة القدم الجهة المسؤولة عن تنظيم اللعبة وتطويرها منذ تأسيسه عام 1956. شهدت الكرة السعودية تطورًا كبيرًا عبر العقود، سواء على مستوى الأندية أو المنتخب الوطني، مما جعلها من أبرز القوى الكروية في قارة آسيا.</p>
+        <div class="hero-actions"> 
+            <a href="#achievements" class="btn btn-primary">اكتشف الإنجازات</a>
+            <a href="#development" class="btn btn-secondary">رؤية المستقبل</a>
         </div>
+    </div>
+    <div class="hero-stat-grid saudi-hero-stats">
+        <article class="hero-stat">
+            <strong>6</strong>
+            <span>مشاركات في كأس العالم</span>
+        </article>
+        <article class="hero-stat">
+            <strong>3</strong>
+            <span>ألقاب كأس آسيا</span>
+        </article>
+        <article class="hero-stat">
+            <strong>1956</strong>
+            <span>تأسيس الاتحاد السعودي</span>
+        </article>
+        <article class="hero-stat">
+            <strong>2030</strong>
+            <span>مرحلة تحول كروي شاملة</span>
+        </article>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<div class="my-container">
-    
-    <section id="about-us" class="page-section">
-        <h2 class="head-line">أحدث أخبارنا</h2>
-        <div class="cards-row">
-            
-            <div class="info-card">
-                <div class="img-box" style="background-image: url('https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-                <div class="text-box">
-                    <span class="tag">كرة القدم</span>
-                    <h3>تحضيرات المونديال</h3>
-                    <p>المملكة تعمل على بناء ملاعب عالمية لاستضافة أكبر حدث رياضي في التاريخ.</p>
-                </div>
-            </div>
-
-            <div class="info-card">
-                <div class="img-box" style="background-image: url('https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-                <div class="text-box">
-                    <span class="tag">سباقات</span>
-                    <h3>فورمولا 1 جدة</h3>
-                    <p>نجاح باهر لسباق الجائزة الكبرى في حلبة كورنيش جدة وسط حضور ضخم.</p>
-                </div>
-            </div>
-
-           <div class="info-card">
-                <div class="img-box" style="background-image: url('https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
-                <div class="text-box">
-                    <span class="tag">E-Sports</span>
-                    <h3>كأس العالم للرياضات الإلكترونية</h3>
-                    <p>الرياض تحتضن أضخم حدث في تاريخ الألعاب الإلكترونية بمشاركة نخبة الفرق العالمية.</p>
-                </div>
-            </div>
-
+<section id="achievements" class="section saudi-home-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>أهم إنجازات المنتخب السعودي</h2>
+            <p>سجل المنتخب السعودي حضورًا ثابتًا في البطولات الكبرى، وترك بصمات مؤثرة صنعت له مكانة راسخة في الكرة الآسيوية والعالمية.</p>
         </div>
-    </section>
-
-<section id="stats-section" class="page-section bg-dark-stats">
-    <div class="my-container">
-        <h2 class="head-line white-text">أرقام من الواقع الرياضي</h2>
-        <div class="stats-grid">
-            
-            <div class="stat-item">
-                <span class="stat-number">+100</span>
-                <p>فعالية رياضية دولية</p>
-            </div>
-
-            <div class="stat-item">
-                <span class="stat-number">2034</span>
-                <p>سنة استضافة المونديال</p>
-            </div>
-
-            <div class="stat-item">
-                <span class="stat-number">48%</span>
-                <p>ارتفاع ممارسة الرياضة</p>
-            </div>
-
-            <div class="stat-item">
-                <span class="stat-number">25</span>
-                <p>اتحاد رياضي جديد</p>
-            </div>
-
+        <div class="card-grid saudi-card-grid">
+            <article class="feature-card">
+                <span class="tag"><span class="material-icons">public</span> كأس العالم</span>
+                <h3>6 مشاركات تاريخية</h3>
+                <p>تأهل المنتخب السعودي إلى كأس العالم أعوام 1994 و1998 و2002 و2006 و2018 و2022، وكان أفضل إنجاز له الوصول إلى دور الـ16 في مونديال 1994.</p>
+                <p class="card-note">أبرز لحظة: الفوز التاريخي على الأرجنتين في مونديال 2022.</p>
+            </article>
+            <article class="feature-card">
+                <span class="tag"><span class="material-icons">emoji_events</span> كأس آسيا</span>
+                <h3>3 بطولات قارية</h3>
+                <p>حقق المنتخب السعودي لقب كأس آسيا 3 مرات في 1984 و1988 و1996، كما حل وصيفًا في 1992 و2000 و2007.</p>
+            </article>
+            <article class="feature-card">
+                <span class="tag"><span class="material-icons">military_tech</span> البطولات الإقليمية</span>
+                <h3>حضور ثابت في البطولات العربية والخليجية</h3>
+                <p>توج المنتخب بكأس العرب في 1998 و2002، وحقق كأس الخليج العربي 3 مرات في 1994 و2002 و2003.</p>
+            </article>
         </div>
     </div>
 </section>
 
-<section id="schedule" class="page-section">
-    <div class="my-container">
-        <h2 class="head-line"> الفعاليات في 2026</h2>
-        <div class="table-responsive">
-            <table class="events-table">
-                <thead>
-                    <tr>
-                        <th>الفعالية</th>
-                        <th>المكان</th>
-                        <th>التاريخ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>دوري روشن للمحترفين</td>
-                        <td>ملاعب المملكة</td>
-                        <td>مستمر</td>
-                    </tr>
-                    <tr>
-                        <td>جائزة السعودية الكبرى (F1)</td>
-                        <td>حلبة جدة</td>
-                        <td>أبريل 2026</td>
-                    </tr>
-                    <tr>
-                        <td>نهائيات التنس العالمية</td>
-                        <td>الرياض</td>
-                        <td>نوفمبر 2026</td>
-                    </tr>
-                </tbody>
-            </table>
+<section id="league" class="section section-alt saudi-home-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>الدوري السعودي</h2>
+            <p>الدوري السعودي للمحترفين أصبح أحد أكثر المشاريع الرياضية جاذبية في المنطقة، بفضل قوته الجماهيرية واستثماراته النوعية وتطوره الفني المتسارع.</p>
+        </div>
+        <div class="stat-grid saudi-stat-grid">
+            <article class="stat-card">
+                <strong>4</strong>
+                <span>أندية كبيرة تتصدر المشهد: الهلال، النصر، الاتحاد، الأهلي</span>
+            </article>
+            <article class="stat-card">
+                <strong>نجوم</strong>
+                <span>استقطاب متواصل لنجوم عالميين رفع جودة التنافس والاهتمام الدولي</span>
+            </article>
+            <article class="stat-card">
+                <strong>إعلام</strong>
+                <span>منافسة قوية وحضور إعلامي كبير جعلا الدوري ضمن أكثر الدوريات متابعة في المنطقة</span>
+            </article>
         </div>
     </div>
 </section>
-</div>
+
+<section id="discover-sections" class="section saudi-home-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>اكتشف المزيد عن المشهد الكروي السعودي</h2>
+            <p>تعرف بسرعة على أبرز ملامح كرة القدم الرجالية والنسائية والاستادات الحديثة، ثم انتقل إلى الصفحة المخصصة لكل محور.</p>
+        </div>
+        <div class="card-grid saudi-card-grid quick-links-grid">
+            <article class="feature-card quick-link-card">
+                <span class="tag"><span class="material-icons">sports_soccer</span> كرة القدم الرجالية</span>
+                <h3>تنافس قوي وحضور جماهيري واسع</h3>
+                <p>تشهد كرة القدم الرجالية في السعودية تطورًا متسارعًا على مستوى الأندية والمنتخب، مع منافسات قوية واهتمام محلي وعالمي متزايد.</p>
+                <a href="{% url 'main:football_male' %}" class="btn btn-primary">الانتقال إلى الصفحة</a>
+            </article>
+            <article class="feature-card quick-link-card">
+                <span class="tag"><span class="material-icons">groups</span> كرة القدم النسائية</span>
+                <h3>حضور متنامٍ وتمكين مستمر</h3>
+                <p>الكرة النسائية السعودية تعيش مرحلة نمو لافتة، مع بطولات جديدة، دعم أكبر للمواهب، وفرص أوسع للمشاركة والاحتراف.</p>
+                <a href="{% url 'main:football_female' %}" class="btn btn-primary">الانتقال إلى الصفحة</a>
+            </article>
+            <article class="feature-card quick-link-card">
+                <span class="tag"><span class="material-icons">stadium</span> الاستادات الرياضية</span>
+                <h3>منشآت حديثة بمعايير عالمية</h3>
+                <p>تتطور الاستادات السعودية بسرعة لتواكب أكبر الأحداث الرياضية، مع بنية تحتية متقدمة وتجارب جماهيرية أكثر تطورًا وراحة.</p>
+                <a href="{% url 'main:stadiums' %}" class="btn btn-primary">الانتقال إلى الصفحة</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="development" class="section">
+    <div class="container">
+        <div class="cta-panel saudi-development-panel">
+            <h2>تطور الكرة السعودية</h2>
+            <p>تسهم رؤية السعودية 2030 في إعادة تشكيل المشهد الكروي من خلال استثمارات مدروسة ومشاريع تطويرية شاملة ترفع جودة اللعبة وتوسّع أثرها محليًا وعالميًا.</p>
+            <div class="content-grid saudi-development-grid">
+                <article class="info-card saudi-info-card">
+                    <span class="tag">البنية</span>
+                    <h3>تطوير الأندية والبنية التحتية</h3>
+                    <p>تحديث الملاعب، تحسين المرافق، ورفع جاهزية البيئة الرياضية لاستضافة أقوى المنافسات.</p>
+                </article>
+                <article class="info-card saudi-info-card">
+                    <span class="tag">الجاذبية</span>
+                    <h3>استقطاب نجوم عالميين</h3>
+                    <p>استقطاب الأسماء الكبرى عزز القيمة الفنية والتسويقية للدوري السعودي في الأسواق العالمية.</p>
+                </article>
+                <article class="info-card saudi-info-card">
+                    <span class="tag">التنافس</span>
+                    <h3>تحسين جودة المنافسات</h3>
+                    <p>الاستثمار في الكوادر الفنية والتنظيمية رفع مستوى التنافس وطور التجربة الكروية الشاملة.</p>
+                </article>
+                <article class="info-card saudi-info-card">
+                    <span class="tag">المستقبل</span>
+                    <h3>دعم الفئات السنية</h3>
+                    <p>الاهتمام بالأكاديميات والمراحل السنية يمثل أساسًا لصناعة جيل جديد يقود الكرة السعودية مستقبلًا.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

@@ -1,0 +1,258 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}كرة القدم الرجالية | سعودي فوتبول{% endblock %}
+{% block active_football %}active{% endblock %}
+
+{% block hero %}
+<div class="hero-content saudi-football-hero">
+    <div class="hero-text">
+        <span class="eyebrow">كرة القدم الرجالية</span>
+        <h1>كرة القدم الرجالية في السعودية</h1>
+        <p>تُعد كرة القدم الرجالية في المملكة العربية السعودية الرياضة الأكثر شعبية، وتشهد حضورًا جماهيريًا ضخمًا ومتابعة إعلامية واسعة. يشرف على تنظيمها الاتحاد السعودي لكرة القدم، بينما تُقام المنافسات المحلية تحت مظلة الدوري السعودي للمحترفين الذي يُعد من أقوى الدوريات في آسيا.</p>
+        <div class="hero-actions">
+            <a href="#clubs" class="btn btn-primary">الأندية السعودية</a>
+            <a href="#moments" class="btn btn-secondary">لحظات لا تُنسى</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section id="clubs" class="section football-section">
+    <div class="container">
+        <div class="section-head football-section-head">
+            <h2>الأندية السعودية</h2>
+            <p>أندية عظيمة حكمت المشهد الكروي السعودي وآسيوي لعقود، وتركت بصمات خالدة في التاريخ الرياضي.</p>
+        </div>
+        <div class="card-grid club-cards-grid">
+            <article class="feature-card club-card hilal-card">
+                <div class="club-header">
+                    <span class="club-icon">🔵</span>
+                    <h3>نادي الهلال السعودي</h3>
+                </div>
+                <div class="club-details">
+                    <p class="club-year">تأسس عام <strong>1957</strong></p>
+                    <p class="club-nickname">الزعيم</p>
+                    <ul class="club-facts">
+                        <li>أكثر الأندية السعودية تحقيقًا للبطولات</li>
+                        <li>حقق دوري أبطال آسيا عدة مرات</li>
+                        <li>سيطرة واضحة في السنوات الأخيرة</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature-card club-card nassr-card">
+                <div class="club-header">
+                    <span class="club-icon">🟡</span>
+                    <h3>نادي النصر السعودي</h3>
+                </div>
+                <div class="club-details">
+                    <p class="club-year">تأسس عام <strong>1955</strong></p>
+                    <p class="club-nickname">العالمي</p>
+                    <ul class="club-facts">
+                        <li>من أقدم الأندية وأكثرها جماهيرية</li>
+                        <li>شهد نقلة كبيرة بعد التعاقد مع نجوم عالميين</li>
+                        <li>قاعدة جماهيرية قوية وتاريخ عريق</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature-card club-card ittihad-card">
+                <div class="club-header">
+                    <span class="club-icon">⚫</span>
+                    <h3>نادي الاتحاد السعودي</h3>
+                </div>
+                <div class="club-details">
+                    <p class="club-year">تأسس عام <strong>1927</strong></p>
+                    <p class="club-nickname">العميد</p>
+                    <ul class="club-facts">
+                        <li>من أقدم الأندية في المنطقة</li>
+                        <li>أول ناد سعودي يحقق دوري أبطال آسيا بنظامه الحديث</li>
+                        <li>إرث تاريخي عريق وحضور آسيوي قوي</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature-card club-card ahli-card">
+                <div class="club-header">
+                    <span class="club-icon">🟢</span>
+                    <h3>نادي الأهلي السعودي</h3>
+                </div>
+                <div class="club-details">
+                    <p class="club-year">تأسس عام <strong>1937</strong></p>
+                    <p class="club-nickname">الراقي</p>
+                    <ul class="club-facts">
+                        <li>حقق الدوري والكأس عدة مرات</li>
+                        <li>يمتلك قاعدة جماهيرية كبيرة وقوية</li>
+                        <li>مرشح دائم للبطولات والبطولات الآسيوية</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="local-players" class="section section-alt football-section">
+    <div class="container">
+        <div class="section-head football-section-head">
+            <h2>اللاعبون السعوديون (المحليون)</h2>
+            <p>نجوم سعوديون تركوا بصمات خالدة في التاريخ الكروي، وأسهموا في رفع اسم الكرة السعودية عالميًا.</p>
+        </div>
+        <div class="community-grid local-players-grid">
+            <article class="profile-card player-card">
+                <div class="player-badge local-badge">
+                    <img src="{% static 'images/سعيد العويران.jpeg' %}" alt="سعيد العويران" loading="lazy">
+                </div>
+                <h4>سعيد العويران</h4>
+                <span>أسطورة 1994</span>
+                <p>صاحب الهدف الأسطوري في كأس العالم 1994</p>
+            </article>
+            <article class="profile-card player-card">
+                <div class="player-badge local-badge">
+                    <img src="{% static 'images/سامي الجابر.jpeg' %}" alt="سامي الجابر" loading="lazy">
+                </div>
+                <h4>سامي الجابر</h4>
+                <span>المهاجم الأيقوني</span>
+                <p>أحد أفضل المهاجمين في تاريخ السعودية</p>
+            </article>
+            <article class="profile-card player-card">
+                <div class="player-badge local-badge">
+                    <img src="{% static 'images/محمد نور.jpeg' %}" alt="محمد نور" loading="lazy">
+                </div>
+                <h4>محمد نور</h4>
+                <span>القائد التاريخي</span>
+                <p>قائد تاريخي لنادي الاتحاد وسفير الكرة السعودية</p>
+            </article>
+            <article class="profile-card player-card">
+                <div class="player-badge local-badge">
+                    <img src="{% static 'images/ياسر القحطاني.jpeg' %}" alt="ياسر القحطاني" loading="lazy">
+                </div>
+                <h4>ياسر القحطاني</h4>
+                <span>نجم آسيا 2007</span>
+                <p>أفضل لاعب في آسيا 2007 وأسطورة المنتخب</p>
+            </article>
+            <article class="profile-card player-card">
+                <div class="player-badge local-badge">
+                    <img src="{% static 'images/سالم الدوسري.jpeg' %}" alt="سالم الدوسري" loading="lazy">
+                </div>
+                <h4>سالم الدوسري</h4>
+                <span>نجم الحاضر</span>
+                <p>نجم المنتخب الحالي وصاحب أهداف تاريخية</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="international-players" class="section football-section">
+    <div class="container">
+        <div class="section-head football-section-head">
+            <h2>اللاعبون الدوليون في الدوري السعودي</h2>
+            <p>نجوم عالميون اختاروا السعودية لمواصلة مشوارهم الكروي، محولين الدوري إلى منصة عالمية.</p>
+        </div>
+        <div class="international-players-showcase">
+            <article class="international-player-card">
+                <div class="player-name">كريستيانو رونالدو</div>
+                <div class="player-club">نادي النصر</div>
+                <p>الأسطورة العالمية التي حقق نجاحات تاريخية محليًا وعالميًا</p>
+            </article>
+            <article class="international-player-card">
+                <div class="player-name">كريم بنزيما</div>
+                <div class="player-club">نادي الاتحاد</div>
+                <p>المهاجم الفرنسي العظيم الذي أضاف قيمة فنية للدوري</p>
+            </article>
+            <article class="international-player-card">
+                <div class="player-name">نيمار</div>
+                <div class="player-club">نادي الهلال</div>
+                <p>النجم البرازيلي الذي نقل الدوري إلى مستويات عالمية جديدة</p>
+            </article>
+            <article class="international-player-card">
+                <div class="player-name">رياض محرز</div>
+                <div class="player-club">نادي الأهلي</div>
+                <p>الجزائري الموهوب الذي جلب خبرة أوروبية عريقة</p>
+            </article>
+        </div>
+        <p class="international-note">هؤلاء اللاعبين ساهموا في جعل الدوري محط أنظار العالم.</p>
+    </div>
+</section>
+
+<section id="history" class="section section-alt football-section">
+    <div class="container">
+        <div class="section-head football-section-head">
+            <h2>تاريخ وتطور الأندية</h2>
+            <p>بدأت الأندية السعودية بشكل بسيط في بدايات القرن العشرين، وتطورت تدريجيًا حتى أصبحت احترافية بالكامل. شهدت فترات مختلفة من الهيمنة والتنافس القوي.</p>
+        </div>
+        <div class="history-timeline">
+            <article class="timeline-card">
+                <div class="timeline-marker"></div>
+                <h3>سيطرة الهلال في السنوات الأخيرة</h3>
+                <p>استحوذ نادي الهلال على البطولات المحلية والآسيوية بتتابع لافت، واستقطاب لنجوم عالميين حول الدوري إلى منصة عالمية.</p>
+            </article>
+            <article class="timeline-card">
+                <div class="timeline-marker"></div>
+                <h3>تألق الاتحاد في بداية الألفية</h3>
+                <p>كان نادي الاتحاد الأكثر تألقًا في بدايات الألفية الثالثة، حيث حقق بطولات محلية وآسيوية ترسخ مكانته التاريخية.</p>
+            </article>
+            <article class="timeline-card">
+                <div class="timeline-marker"></div>
+                <h3>منافسة قوية بين النصر والهلال</h3>
+                <p>سنوات طويلة من التنافس الشرس بين النصر والهلال شكلت حقبة ذهبية للكرة السعودية، مما أثرى المشهد الكروي بمباريات لا تُنسى.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="moments" class="section football-section">
+    <div class="container">
+        <div class="section-head football-section-head">
+            <h2>أبرز اللحظات في تاريخ الكرة السعودية</h2>
+            <p>لحظات صنعت الذاكرة الجماهيرية ورسخت صورة الكرة السعودية كقصة نجاح مستمرة.</p>
+        </div>
+        <div class="challenge-grid moments-grid">
+            <article class="challenge-card moment-card">
+                <div class="icon material-icons">sports_soccer</div>
+                <h3>هدف سعيد العويران في كأس العالم 1994</h3>
+                <p>واحد من أجمل الأهداف في تاريخ كأس العالم، وأيقونة خالدة في الذاكرة الرياضية السعودية والعالمية.</p>
+            </article>
+            <article class="challenge-card moment-card">
+                <div class="icon material-icons">flag</div>
+                <h3>فوز منتخب السعودية على منتخب الأرجنتين في كأس العالم 2022</h3>
+                <p>انتصار عالمي استثنائي أكد قدرة المنتخب السعودي على مجاراة كبار المنتخبات وتحقيق المفاجآت التاريخية.</p>
+            </article>
+        </div>
+        <div class="moments-cta-wrap">
+            <a href="{% url 'main:moments' %}" class="moments-cta-btn">اعرف المزيد</a>
+        </div>
+    </div>
+</section>
+
+<section id="modern-development" class="section section-alt football-section">
+    <div class="container">
+        <div class="cta-panel saudi-football-panel">
+            <div class="section-head football-section-head">
+                <h2>تطور الكرة السعودية حديثًا</h2>
+                <p>تعيش الكرة السعودية نهضة كبيرة بدعم رؤية السعودية 2030، ومن أبرز ملامحها:</p>
+            </div>
+            <div class="development-grid">
+                <article class="info-card development-card">
+                    <span class="card-icon">1</span>
+                    <h3>استقطاب نجوم عالميين</h3>
+                    <p>جلب أفضل المواهب العالمية عزز القيمة الفنية والتسويقية للدوري</p>
+                </article>
+                <article class="info-card development-card">
+                    <span class="card-icon">2</span>
+                    <h3>تطوير الملاعب والبنية التحتية</h3>
+                    <p>تحديث الملاعب والمرافق لاستضافة أقوى المنافسات العالمية</p>
+                </article>
+                <article class="info-card development-card">
+                    <span class="card-icon">3</span>
+                    <h3>زيادة التنافسية في الدوري</h3>
+                    <p>رفع مستوى التنافس جعل كل مباراة حدثًا متابعًا محليًا وعالميًا</p>
+                </article>
+                <article class="info-card development-card">
+                    <span class="card-icon">4</span>
+                    <h3>تحسين جودة النقل والبث</h3>
+                    <p>تقنيات بث عالمية توصل المباريات لملايين المتابعين حول العالم</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

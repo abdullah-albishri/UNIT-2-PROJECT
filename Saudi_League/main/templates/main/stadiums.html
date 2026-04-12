@@ -1,0 +1,157 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}الاستادات الرياضية | سعودي فوتبول{% endblock %}
+{% block active_infrastructure %}active{% endblock %}
+
+{% block hero %}
+<div class="hero-content stadiums-hero">
+    <div class="hero-text">
+        <span class="eyebrow">استادات الدوري السعودي</span>
+        <h1>استادات الدوري السعودي</h1>
+        <p>تضم منافسات الدوري السعودي للمحترفين مجموعة من الملاعب الحديثة والمتطورة، التي تُعد من الأفضل في المنطقة، حيث تستضيف مباريات الأندية وتوفر تجربة جماهيرية مميزة.</p>
+        <div class="hero-actions">
+            <a href="#current-stadiums" class="btn btn-primary">أبرز الاستادات</a>
+            <a href="#future-stadiums" class="btn btn-secondary">الملاعب المستقبلية</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section id="current-stadiums" class="section stadiums-section stadiums-section-alt">
+    <div class="container">
+        <div class="section-head stadiums-section-head">
+            <h2>أبرز الاستادات في السعودية</h2>
+        </div>
+
+        <div class="stadiums-grid current-stadiums-grid">
+            <article class="feature-card stadium-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب الملك فهد.jpeg' %}" alt="ملعب الملك فهد الدولي" loading="lazy">
+                <h3>ملعب الملك فهد الدولي</h3>
+                <p>📍 الموقع: الرياض</p>
+                <p class="stadium-capacity">👥 السعة: أكثر من 68,000 متفرج</p>
+                <p>🏆 يُعتبر من أكبر الملاعب في المملكة</p>
+                <p>استضاف مباريات دولية كبرى وبطولات مهمة</p>
+            </article>
+
+            <article class="feature-card stadium-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/king_sulman.jpeg' %}" alt="ملعب الأمير فيصل بن فهد" loading="lazy">
+                <h3>ملعب الأمير فيصل بن فهد</h3>
+                <p>📍 الموقع: الرياض</p>
+                <p class="stadium-capacity">👥 السعة: حوالي 22,000 متفرج</p>
+                <p>يُستخدم لمباريات الدوري والمنتخبات</p>
+            </article>
+
+            <article class="feature-card stadium-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب الجوهرة.jpeg' %}" alt="مدينة الملك عبدالله الرياضية الجوهرة المشعة" loading="lazy">
+                <h3>مدينة الملك عبدالله الرياضية (الجوهرة المشعة)</h3>
+                <p>📍 الموقع: جدة</p>
+                <p class="stadium-capacity">👥 السعة: أكثر من 60,000 متفرج</p>
+                <p>تُعرف بـ "الجوهرة المشعة"</p>
+                <p>تستضيف مباريات كبرى ونهائيات</p>
+            </article>
+
+            <article class="feature-card stadium-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب الامير عبدالله الفيصل.jpeg' %}" alt="ملعب الأمير عبدالله الفيصل" loading="lazy">
+                <h3>ملعب الأمير عبدالله الفيصل</h3>
+                <p>📍 الموقع: جدة</p>
+                <p class="stadium-capacity">👥 السعة: حوالي 27,000 متفرج</p>
+                <p>من أقدم الملاعب وتم تطويره حديثًا</p>
+            </article>
+
+            <article class="feature-card stadium-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب الاول بارك.jpeg' %}" alt="ملعب الأول بارك" loading="lazy">
+                <h3>ملعب الأول بارك (جامعة الملك سعود)</h3>
+                <p>📍 الموقع: الرياض</p>
+                <p class="stadium-capacity">👥 السعة: حوالي 25,000 متفرج</p>
+                <p>يُعرف حاليًا باسم الأول بارك</p>
+                <p>ملعب نادي النصر السعودي</p>
+            </article>
+
+            <article class="feature-card stadium-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/king_sulman.jpeg' %}" alt="ملعب الأمير محمد بن فهد" loading="lazy">
+                <h3>ملعب الأمير محمد بن فهد</h3>
+                <p>📍 الموقع: الدمام</p>
+                <p class="stadium-capacity">👥 السعة: حوالي 26,000 متفرج</p>
+                <p>يستضيف مباريات أندية المنطقة الشرقية</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="future-stadiums" class="section stadiums-section future-stadiums-section">
+    <div class="container">
+        <div class="section-head stadiums-section-head">
+            <h2>الملاعب الجديدة والمستقبلية</h2>
+        </div>
+
+        <div class="stadiums-grid future-stadiums-grid">
+            <article class="feature-card stadium-card future-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب الهلال.jpeg' %}" alt="ملعب نادي الهلال الجديد" loading="lazy">
+                <h3>ملعب نادي الهلال الجديد</h3>
+                <p>📍 الموقع: الرياض</p>
+                <p class="stadium-capacity">👥 السعة المتوقعة: أكثر من 45,000 متفرج</p>
+                <p>سيكون الملعب الجديد خاصًا بنادي الهلال السعودي</p>
+                <p>يتميز بتصميم عصري ومرافق حديثة</p>
+                <p>من المتوقع أن يكون من أفضل الملاعب في آسيا</p>
+            </article>
+
+            <article class="feature-card stadium-card future-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب ارامكو.jpeg' %}" alt="ملعب مدينة القدية" loading="lazy">
+                <h3>ملعب مدينة القدية</h3>
+                <p>📍 الموقع: القدية – الرياض</p>
+                <p class="stadium-capacity">👥 السعة المتوقعة: أكثر من 45,000 متفرج</p>
+                <p>جزء من مشروع القدية الترفيهي الضخم</p>
+                <p>تصميم مبتكر يجمع بين الرياضة والترفيه</p>
+            </article>
+
+            <article class="feature-card stadium-card future-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب نيوم.jpeg' %}" alt="ملعب نيوم" loading="lazy">
+                <h3>ملعب نيوم</h3>
+                <p>📍 الموقع: نيوم</p>
+                <p>سيكون جزءًا من مشروع نيوم المستقبلي</p>
+                <p>تصميم مستقبلي يعكس رؤية المدينة الذكية</p>
+            </article>
+
+            <article class="feature-card stadium-card future-card stadium-reveal">
+                <img class="stadium-image" src="{% static 'images/ملعب الامير محمد بن سلمان.jpeg' %}" alt="ملعب الأمير محمد بن سلمان" loading="lazy">
+                <h3>ملعب الأمير محمد بن سلمان (مشروع)</h3>
+                <p>📍 الموقع: الرياض</p>
+                <p>من ضمن المشاريع الرياضية الكبرى المخطط لها</p>
+                <p>سيستضيف فعاليات رياضية دولية كبرى</p>
+            </article>
+        </div>
+
+        <p class="future-note">تأتي هذه المشاريع ضمن خطط المملكة لاستضافة كأس العالم 2034، حيث تسعى السعودية لتقديم بنية تحتية رياضية عالمية المستوى.</p>
+    </div>
+</section>
+
+<section id="stadium-development" class="section stadiums-section stadiums-section-alt">
+    <div class="container">
+        <div class="section-head stadiums-section-head">
+            <h2>تطور الملاعب في السعودية</h2>
+            <p>شهدت الملاعب السعودية تطورًا كبيرًا ضمن مستهدفات رؤية السعودية 2030، حيث تم:</p>
+        </div>
+
+        <div class="card-grid stadium-development-grid">
+            <article class="feature-card mini-dev-card stadium-reveal">
+                <span class="growth-icon">1</span>
+                <h3>تطوير البنية التحتية للملاعب</h3>
+            </article>
+            <article class="feature-card mini-dev-card stadium-reveal">
+                <span class="growth-icon">2</span>
+                <h3>تحسين الإضاءة والتقنيات</h3>
+            </article>
+            <article class="feature-card mini-dev-card stadium-reveal">
+                <span class="growth-icon">3</span>
+                <h3>تحسين تجربة الجماهير</h3>
+            </article>
+            <article class="feature-card mini-dev-card stadium-reveal">
+                <span class="growth-icon">4</span>
+                <h3>دعم النقل التلفزيوني عالي الجودة</h3>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}لحظات لا تُنسى | سعودي فوتبول{% endblock %}
+{% block active_moments %}active{% endblock %}
+
+{% block hero %}
+<div class="hero-content moments-hero-content">
+    <div class="hero-text moments-hero-text">
+        <span class="eyebrow">وثائقي كروي سعودي</span>
+        <h1>لحظات كروية لا تُنسى في تاريخ الكرة السعودية</h1>
+        <p>شهدت كرة القدم السعودية العديد من اللحظات التاريخية التي صنعت مجدها، سواء على مستوى المنتخب أو الأندية، وبقيت محفورة في ذاكرة الجماهير.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section class="moments-doc-section moments-doc-section-alt" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>الفوز التاريخي على الأرجنتين (كأس العالم 2022)</h2>
+        <p>يُعد فوز منتخب السعودية لكرة القدم على منتخب الأرجنتين لكرة القدم بنتيجة 2-1 في كأس العالم 2022 من أعظم اللحظات في تاريخ الكرة السعودية، وأحد أكبر مفاجآت كأس العالم عبر التاريخ.</p>
+        <video class="moments-video-player" controls preload="metadata" width="100%" poster="{% static 'images/سالم الدوسري.jpeg' %}">
+            <source src="{% static 'videos/هدف سالم على منتخب الارجنتين.mp4' %}" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+</section>
+
+<section class="moments-doc-section" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>هدف سعيد العويران التاريخي</h2>
+        <p>سجل سعيد العويران هدفًا أسطوريًا في مرمى بلجيكا خلال كأس العالم 1994، ليقود المنتخب إلى دور الـ16 في أول مشاركة له، ويصبح الهدف من أشهر أهداف المونديال.</p>
+        <video class="moments-video-player" controls preload="metadata" width="100%" poster="{% static 'images/سعيد العويران.jpeg' %}">
+            <source src="{% static 'videos/هدف سعيد العويران.mp4' %}" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+</section>
+
+<section class="moments-doc-section moments-doc-section-alt" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>التأهل الأول لكأس العالم 1994</h2>
+        <p>كان تأهل المنتخب السعودي لأول مرة إلى كأس العالم FIFA عام 1994 نقطة تحول تاريخية، حيث أثبتت السعودية وجودها على الساحة العالمية.</p>
+        <div class="media-placeholder">
+            <!-- Replace with <iframe> for YouTube or <img> for image -->
+            <div class="media-placeholder-inner">
+                <div class="media-placeholder-icon">▶️ / 🖼️</div>
+                <p>أضف فيديو أو صورة هنا</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="moments-doc-section" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>ثلاثية كأس آسيا</h2>
+        <p>حقق المنتخب السعودي لقب كأس آسيا ثلاث مرات (1984، 1988، 1996)، ليصبح من أقوى المنتخبات الآسيوية تاريخيًا.</p>
+        <div class="moments-cups-grid">
+            <figure class="moments-cup-card">
+                <img src="{% static 'images/كاس 1984.jpeg' %}" alt="كأس آسيا 1984" loading="lazy">
+                <figcaption>كأس آسيا 1984</figcaption>
+            </figure>
+            <figure class="moments-cup-card">
+                <img src="{% static 'images/كاس 1988.jpeg' %}" alt="كأس آسيا 1988" loading="lazy">
+                <figcaption>كأس آسيا 1988</figcaption>
+            </figure>
+            <figure class="moments-cup-card">
+                <img src="{% static 'images/كاس 1996.jpeg' %}" alt="كأس آسيا 1996" loading="lazy">
+                <figcaption>كأس آسيا 1996</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="moments-doc-section moments-doc-section-alt" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>الهلال في نهائي كأس العالم للأندية</h2>
+        <p>وصل نادي الهلال السعودي إلى نهائي كأس العالم للأندية عام 2022، في إنجاز تاريخي غير مسبوق لنادٍ سعودي.</p>
+        <div class="media-placeholder">
+            <!-- Replace with <iframe> for YouTube or <img> for image -->
+            <div class="media-placeholder-inner">
+                <div class="media-placeholder-icon">▶️ / 🖼️</div>
+                <p>أضف فيديو أو صورة هنا</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="moments-doc-section" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>سيطرة الأندية السعودية آسيويًا</h2>
+        <p>حققت الأندية السعودية إنجازات كبيرة في دوري أبطال آسيا، أبرزها:</p>
+        <ul class="moments-highlights-list">
+            <li>تتويج الهلال بعدة نسخ</li>
+            <li>تتويج نادي الاتحاد السعودي بلقبين آسيويين متتاليين</li>
+        </ul>
+        <div class="media-placeholder">
+            <!-- Replace with <iframe> for YouTube or <img> for image -->
+            <div class="media-placeholder-inner">
+                <div class="media-placeholder-icon">▶️ / 🖼️</div>
+                <p>أضف فيديو أو صورة هنا</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="moments-doc-section moments-doc-section-alt" dir="rtl" lang="ar">
+    <div class="container">
+        <h2>بداية مشروع النجوم العالميين</h2>
+        <p>شهد الدوري السعودي للمحترفين نقلة تاريخية مع استقطاب نجوم عالميين مثل كريستيانو رونالدو، مما رفع مستوى المنافسة عالميًا.</p>
+        <div class="media-placeholder">
+            <!-- Replace with <iframe> for YouTube or <img> for image -->
+            <div class="media-placeholder-inner">
+                <div class="media-placeholder-icon">▶️ / 🖼️</div>
+                <p>أضف فيديو أو صورة هنا</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+    const animatedSections = document.querySelectorAll('.moments-doc-section');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    animatedSections.forEach((section) => observer.observe(section));
+})();
+</script>
+{% endblock %}

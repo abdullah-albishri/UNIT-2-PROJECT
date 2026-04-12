@@ -1,0 +1,228 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}مونديال 2034 | سعودي فوتبول{% endblock %}
+{% block active_worldcup %}active{% endblock %}
+
+{% block hero %}
+<div class="wc34-hero-content">
+    <div class="wc34-hero-badge">FIFA World Cup™ 2034</div>
+    <h1 class="wc34-hero-headline">
+        <span class="wc34-glow-text">المستحيل ليس سعودي</span>
+    </h1>
+    <p class="wc34-hero-sub">كأس العالم FIFA 2034 في المملكة العربية السعودية</p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<!-- ═══════════════════════════════════════════
+     Section 2 – Video Placeholder
+════════════════════════════════════════════ -->
+<section class="section wc34-section wc34-video-section">
+    <div class="container">
+        <div class="wc34-section-head">
+            <h2>فيديو تعريفي</h2>
+        </div>
+
+        <div class="wc34-video-wrap">
+            <video class="wc34-video-player" controls preload="metadata" width="100%">
+                <source src="{% static 'videos/video_worldcup.mp4' %}" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     Section 3 – Introduction
+════════════════════════════════════════════ -->
+<section class="section wc34-section wc34-section-alt">
+    <div class="container">
+        <div class="wc34-section-head">
+            <h2>كأس العالم 2034 في السعودية</h2>
+        </div>
+        <div class="wc34-intro-box">
+            <p class="wc34-intro-text">
+                أُعلن عن استضافة كأس العالم FIFA 2034 في المملكة العربية السعودية، في خطوة تاريخية تُعد الأكبر في تاريخ الرياضة السعودية، وتعكس التطور الكبير الذي تشهده المملكة في مختلف المجالات.
+            </p>
+            <p class="wc34-intro-text">
+                تأتي هذه الاستضافة بدعم من الاتحاد الدولي لكرة القدم، وضمن مستهدفات رؤية السعودية 2030 لتعزيز مكانة المملكة عالميًا.
+            </p>
+            <div class="wc34-intro-decoration"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     Section 4 – Stadiums & Infrastructure
+════════════════════════════════════════════ -->
+<section class="section wc34-section">
+    <div class="container">
+        <div class="wc34-section-head">
+            <h2>الملاعب والبنية التحتية</h2>
+        </div>
+
+        <p class="wc34-lead-text">
+            تعمل السعودية على تطوير وبناء مجموعة من الملاعب الحديثة التي ستستضيف مباريات البطولة، حيث سيتم:
+        </p>
+
+        <div class="wc34-infra-grid">
+            <article class="wc34-infra-card wc34-reveal">
+                <div class="wc34-infra-icon">1</div>
+                <p>إنشاء ملاعب جديدة بتصاميم عالمية</p>
+            </article>
+            <article class="wc34-infra-card wc34-reveal">
+                <div class="wc34-infra-icon">2</div>
+                <p>تطوير الملاعب الحالية وفق أعلى المعايير</p>
+            </article>
+            <article class="wc34-infra-card wc34-reveal">
+                <div class="wc34-infra-icon">3</div>
+                <p>توزيع الملاعب على عدة مدن رئيسية</p>
+            </article>
+            <article class="wc34-infra-card wc34-reveal">
+                <div class="wc34-infra-icon">4</div>
+                <p>تطوير وسائل النقل والمواصلات</p>
+            </article>
+        </div>
+
+        <p class="wc34-note">
+            ومن المتوقع أن تكون الملاعب من بين الأكثر تطورًا في تاريخ كأس العالم.
+        </p>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     Section 5 – Host Cities
+════════════════════════════════════════════ -->
+<section class="section wc34-section wc34-section-alt">
+    <div class="container">
+        <div class="wc34-section-head">
+            <h2>المدن المستضيفة</h2>
+        </div>
+
+        <div class="wc34-cities-grid">
+            <article class="wc34-city-card wc34-reveal">
+                <img class="wc34-city-image" src="{% static 'images/الرياض.jpeg' %}" alt="مدينة الرياض" loading="lazy">
+                <div class="wc34-city-info">
+                    <div class="wc34-city-icon">مدينة</div>
+                    <h3>الرياض</h3>
+                </div>
+            </article>
+            <article class="wc34-city-card wc34-reveal">
+                <img class="wc34-city-image" src="{% static 'images/جدة.jpeg' %}" alt="مدينة جدة" loading="lazy">
+                <div class="wc34-city-info">
+                    <div class="wc34-city-icon">مدينة</div>
+                    <h3>جدة</h3>
+                </div>
+            </article>
+            <article class="wc34-city-card wc34-reveal">
+                <img class="wc34-city-image" src="{% static 'images/الدمام.jpeg' %}" alt="مدينة الدمام" loading="lazy">
+                <div class="wc34-city-info">
+                    <div class="wc34-city-icon">مدينة</div>
+                    <h3>الدمام</h3>
+                </div>
+            </article>
+            <article class="wc34-city-card wc34-reveal">
+                <img class="wc34-city-image" src="{% static 'images/نيوم.jpeg' %}" alt="مدينة نيوم" loading="lazy">
+                <div class="wc34-city-info">
+                    <div class="wc34-city-icon">مدينة</div>
+                    <h3>نيوم</h3>
+                </div>
+            </article>
+        </div>
+
+        <p class="wc34-note">
+            وستشهد هذه المدن تطويرًا كبيرًا في البنية التحتية والخدمات.
+        </p>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     Section 6 – Hosting Goals
+════════════════════════════════════════════ -->
+<section class="section wc34-section">
+    <div class="container">
+        <div class="wc34-section-head">
+            <h2>أهداف الاستضافة</h2>
+        </div>
+        <p class="wc34-lead-text">تهدف المملكة من استضافة كأس العالم FIFA 2034 إلى:</p>
+
+        <div class="wc34-goals-grid">
+            <article class="wc34-goal-card wc34-reveal">
+                <div class="wc34-goal-icon">1</div>
+                <p>تعزيز مكانتها عالميًا</p>
+            </article>
+            <article class="wc34-goal-card wc34-reveal">
+                <div class="wc34-goal-icon">2</div>
+                <p>تطوير كرة القدم محليًا</p>
+            </article>
+            <article class="wc34-goal-card wc34-reveal">
+                <div class="wc34-goal-icon">3</div>
+                <p>تنمية الاقتصاد والسياحة</p>
+            </article>
+            <article class="wc34-goal-card wc34-reveal">
+                <div class="wc34-goal-icon">4</div>
+                <p>جذب الجماهير من مختلف دول العالم</p>
+            </article>
+            <article class="wc34-goal-card wc34-reveal">
+                <div class="wc34-goal-icon">5</div>
+                <p>تحسين المنشآت الرياضية</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     Section 7 – Economic & Tourism Impact
+════════════════════════════════════════════ -->
+<section class="section wc34-section wc34-economic-section">
+    <div class="container">
+        <div class="wc34-section-head">
+            <h2>التأثير الاقتصادي والسياحي</h2>
+        </div>
+        <p class="wc34-lead-text">من المتوقع أن تُحقق البطولة فوائد كبيرة، مثل:</p>
+
+        <div class="wc34-economic-list">
+            <div class="wc34-economic-item wc34-reveal">
+                <div class="wc34-econ-bullet">1</div>
+                <span>زيادة عدد السياح</span>
+            </div>
+            <div class="wc34-economic-item wc34-reveal">
+                <div class="wc34-econ-bullet">2</div>
+                <span>خلق فرص عمل جديدة</span>
+            </div>
+            <div class="wc34-economic-item wc34-reveal">
+                <div class="wc34-econ-bullet">3</div>
+                <span>دعم القطاعات المختلفة مثل النقل والفنادق</span>
+            </div>
+            <div class="wc34-economic-item wc34-reveal">
+                <div class="wc34-econ-bullet">4</div>
+                <span>تعزيز الاستثمار الأجنبي</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     Section 8 – Event Significance (Closing)
+════════════════════════════════════════════ -->
+<section class="section wc34-closing-section">
+    <div class="container">
+        <div class="wc34-closing-inner">
+            <div class="wc34-section-head" style="text-align:center;">
+                <h2>أهمية الحدث</h2>
+            </div>
+            <p class="wc34-closing-text">
+                تُعد استضافة كأس العالم FIFA 2034 نقطة تحول كبيرة في تاريخ المملكة، حيث تُبرز قدرتها على تنظيم أكبر الأحداث العالمية، وتؤكد مكانتها كوجهة رياضية عالمية.
+            </p>
+            <div class="wc34-closing-badges">
+                <span class="wc34-badge">المملكة العربية السعودية</span>
+                <span class="wc34-badge">FIFA World Cup™ 2034</span>
+                <span class="wc34-badge">حدث عالمي</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

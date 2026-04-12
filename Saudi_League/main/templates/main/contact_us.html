@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}تواصل معنا | سعودي فوتبول{% endblock %}
+{% block active_engage %}active{% endblock %}
+
+{% block hero %}
+<div class="hero-content contact-hero">
+    <div class="hero-text">
+        <span class="eyebrow">تواصل معنا</span>
+        <h1>تواصل معنا</h1>
+        <p>نسعد بتواصلك معنا! إذا كان لديك أي استفسار أو اقتراح أو ملاحظة، لا تتردد في التواصل معنا عبر وسائل التواصل المتاحة أدناه.</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<section id="contact-info" class="section contact-section contact-section-alt">
+    <div class="container">
+        <div class="section-head contact-section-head">
+            <h2>معلومات التواصل</h2>
+        </div>
+
+        <div class="contact-info-grid">
+            <article class="feature-card contact-info-card">
+                <div class="contact-icon">📧</div>
+                <h3>البريد الإلكتروني</h3>
+                <p>a.m.albshri22@gmail.com</p>
+            </article>
+
+            <article class="feature-card contact-info-card">
+                <div class="contact-icon">📱</div>
+                <h3>رقم الجوال</h3>
+                <p>+966 55 202 6634</p>
+            </article>
+
+            <article class="feature-card contact-info-card">
+                <div class="contact-icon">📍</div>
+                <h3>الموقع</h3>
+                <p>الرياض، المملكة العربية السعودية</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
